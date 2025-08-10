@@ -103,7 +103,7 @@ server.delete('/videos/:id', async(request, reply) => { // Deleta algo (um unico
 
     //return 'Deletar os videos (1 unico delete por id)'
 })
-
+        // configuração para o Render criar a minha propria porta! 
 server.listen({
     port: process.env.PORT ?? 3333,
 })
