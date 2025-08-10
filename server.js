@@ -104,6 +104,8 @@ server.delete('/videos/:id', async(request, reply) => { // Deleta algo (um unico
     //return 'Deletar os videos (1 unico delete por id)'
 })
 
+    // Render, precisa de um host para continuar o processo
 server.listen({
+    host: '0.0.0.0', 
     port: process.env.PORT ?? 3333,
 })
